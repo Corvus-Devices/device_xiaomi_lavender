@@ -40,7 +40,6 @@ on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
     mount_all /vendor/etc/fstab.qcom
-    swapon_all /vendor/etc/fstab.qcom
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
     mkdir /mnt/vendor/persist/data 0700 system system
@@ -274,6 +273,8 @@ on property:init.svc.hwcomposer-2-1=restarting
 
 on property:sys.boot_completed=1
     setprop sys.io.scheduler "bfq"
+    # Enable ZRAM on boot_complete
+    swapon_all /vendor/etc/fstab.qcom
 
 on charger
     load_system_props
