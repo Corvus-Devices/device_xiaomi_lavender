@@ -27,6 +27,9 @@
 #
 #
 
+on post-fs
+    wait_for_prop vendor.sys.listeners.registered true
+
 on boot
     # Camera
     chmod 0660 /sys/android_camera/sensor
