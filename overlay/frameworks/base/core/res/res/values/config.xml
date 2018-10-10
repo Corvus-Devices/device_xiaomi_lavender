@@ -619,4 +619,7 @@
     <!-- Whether to artificially interpret all signal strengths as
          one bar higher than they actually are g-->
     <bool name="config_inflateSignalStrength">true</bool>
+
+    <!-- Whether notify fingerprint client of successful cancelled authentication -->
+    <bool name="config_notifyClientOnFingerprintCancelSuccess">true</bool>
 </resources>
