@@ -116,6 +116,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.display-size=1920x1080
+
 # Misc
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.qcomsysd.enabled=1 \
@@ -165,16 +166,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.cmc=false \
     ro.vendor.sdk.sensors.gestures=false
 
-# Early phase offset configuration for SurfaceFlinger
+# SurfaceFlinger
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_phase_offset_ns=1500000 \
     debug.sf.early_app_phase_offset_ns=1500000 \
     debug.sf.early_gl_phase_offset_ns=3000000 \
-    debug.sf.early_gl_app_phase_offset_ns=15000000
-
-# Enable backpressure for GL comp
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.enable_gl_backpressure=1
+    debug.sf.early_gl_app_phase_offset_ns=15000000 \
+    debug.sf.enable_gl_backpressure=1 \
+    ro.surface_flinger.vsync_event_phase_offset_ns=2000000 \
+    ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
 
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
