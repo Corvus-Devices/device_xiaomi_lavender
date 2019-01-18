@@ -140,7 +140,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.demo.hdmirotationlock=false \
     persist.hwc.enable_vds=1 \
     ro.opengles.version=196610 \
-    ro.sf.lcd_density=403 \
     ro.vendor.display.cabl=2 \
     vendor.display.disable_skip_validate=1 \
     vendor.display.enable_default_color_mode=0 \
