@@ -70,8 +70,8 @@ on post-fs-data
     mkdir /data/vendor/hbtp 0750 system system
 
 on boot
-    start rmt_storage
-    start rfs_access
+    start vendor.rmt_storage
+    start vendor.rfs_access
     write /dev/cpuset/top-app/cpus 0-7
     write /dev/cpuset/audio-app/cpus 1-2
     write /dev/cpuset/foreground/cpus 0-7
