@@ -11,6 +11,7 @@ bt.max.hfpclient.connections=1
 vendor.bluetooth.soc=cherokee
 
 # Display
+debug.cpurend.vsync=false
 debug.gralloc.enable_fb_ubwc=1
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
