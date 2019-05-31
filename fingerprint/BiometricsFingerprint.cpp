@@ -206,7 +206,7 @@ Return<RequestStatus> BiometricsFingerprint::authenticate(uint64_t operationId,
 }
 
 void setFpVendorProp(const char *fp_vendor) {
-    property_set("persist.sys.fp.vendor", fp_vendor);
+    property_set("persist.vendor.sys.fp.vendor", fp_vendor);
 }
 
 IBiometricsFingerprint* BiometricsFingerprint::getInstance() {
@@ -215,6 +215,7 @@ IBiometricsFingerprint* BiometricsFingerprint::getInstance() {
     }
     return sInstance;
 }
+
 
 fingerprint_device_t* getDeviceForVendor(const char *class_name)
 {
