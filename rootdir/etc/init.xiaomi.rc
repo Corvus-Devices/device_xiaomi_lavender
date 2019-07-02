@@ -77,6 +77,7 @@ on boot
 
     # Power supply
     chmod 0660 /sys/class/power_supply/battery/input_suspend
+    chmod 0666 /sys/class/power_supply/battery/input_suspend
     chmod 0660 /sys/class/power_supply/battery/charging_enabled
     chown system system /sys/class/power_supply/battery/input_suspend
     chown system system /sys/class/power_supply/battery/charging_enabled
