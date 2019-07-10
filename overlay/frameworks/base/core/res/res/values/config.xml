@@ -437,6 +437,11 @@
          provisioning, availability etc -->
     <bool name="config_carrier_volte_available">true</bool>
 
+    <!-- Flag specifying whether VT should be available for carrier: independent of
+         carrier provisioning. If false: hard disabled. If true: then depends on carrier
+         provisioning, availability etc -->
+    <bool name="config_carrier_vt_available">true</bool>
+
     <!-- Flag specifying whether WFC over IMS is available on device -->
     <bool name="config_device_vt_available">true</bool>
     <bool name="config_device_wfc_ims_available">true</bool>
@@ -606,6 +611,6 @@
     <bool name="config_bluetooth_hfp_inband_ringing_support">true</bool>
 
     <!-- Whether to artificially interpret all signal strengths as
-         one bar higher than they actually are -->
+         one bar higher than they actually are g-->
     <bool name="config_inflateSignalStrength">true</bool>
 </resources>
