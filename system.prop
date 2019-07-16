@@ -23,6 +23,8 @@ ro.vendor.display.ad.sdr_calib_data=/data/vendor/display/ad_calib.cfg
 ro.vendor.display.sensortype=2
 
 # Media
+debug.stagefright.omx_default_rank.sw-audio=1
+debug.stagefright.omx_default_rank=0
 media.stagefright.thumbnail.prefer_hw_codecs=true
 media.stagefright.enable-player=true
 media.stagefright.enable-http=true
