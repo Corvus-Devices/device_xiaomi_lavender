@@ -153,6 +153,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.data_ltd_sys_ind=1 \
     persist.vendor.radio.data_con_rprt=1 \
     persist.radio.calls.on.ims=1 \
+    persist.vendor.radio.procedure_bytes=SKIP \
     persist.sys.fflag.override.settings_network_and_internet_v2=true \
     ro.telephony.iwlan_operation_mode=legacy \
     ro.telephony.use_old_mnc_mcc_format=true
