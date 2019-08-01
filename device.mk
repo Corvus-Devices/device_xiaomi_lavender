@@ -139,7 +139,9 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system \
     liboverlay \
     libtinyxml \
-    memtrack.sdm660
+    memtrack.sdm660 \
+    vendor.display.config@1.1 \
+    vendor.display.config@1.1.vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.1-service \
