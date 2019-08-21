@@ -90,6 +90,7 @@ ro.vendor.bluetooth.wipower=false
 vendor.fm.a2dp.conc.disabled=true
 vendor.hw.fm.init=0
 vendor.qcom.bluetooth.soc=cherokee
+ro.vendor.fm.use_audio_session=true
 
 # Camera
 persist.bokeh.switch.lux=290
