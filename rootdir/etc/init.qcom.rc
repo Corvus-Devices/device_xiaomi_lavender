@@ -147,6 +147,12 @@ on boot
     #Create WIGIG socket area
     mkdir /dev/socket/wigig 0770 wifi wifi
 
+    # LED torch permissions
+    chmod 0666 /sys/class/leds/led:torch_0/brightness
+    chmod 0666 /sys/class/leds/led:torch_1/brightness
+    chmod 0666 /sys/class/leds/led:switch_0/brightness
+    chmod 0666 /sys/class/leds/led:switch_1/brightness
+
     setprop wifi.interface wlan0
 
     setprop ro.telephony.call_ring.multiple false
