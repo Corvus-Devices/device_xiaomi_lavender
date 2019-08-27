@@ -132,6 +132,9 @@ persist.data.df.dev_name=rmnet_usb0
 # 2 or anything else is camera2
 persist.radio.VT_CAM_INTERFACE=2
 
+# cherrypick form d2s  for video call
+persist.vendor.qti.telephony.vt_cam_interface=1
+
 #property to enable user to access Google WFD settings
 persist.debug.wfd.enable=1
 #Enable stm-events
@@ -150,13 +153,15 @@ persist.hwc.enable_vds=1
 
 #Settings to enable sensors
 #Device Orientation sensor
-ro.vendor.sensors.dev_ori=true
+ro.vendor.sensors.dev_ori=false
 #Persistent Motion Detector
 ro.vendor.sensors.pmd=true
 #Stationary Detector
 ro.vendor.sensors.sta_detect=true
 #Motion Detector
 ro.vendor.sensors.mot_detect=true
+#enable pickup gesture
+ro.vendor.sensors.pug = true
 
 #Expose aux camera for below packages
 vendor.camera.aux.packagelist=org.codeaurora.snapcam
@@ -167,6 +172,15 @@ persist.camera.privapp.list=org.codeaurora.snapcam
 
 #disable UBWC for camera
 persist.vendor.camera.preview.ubwc=0
+persist.vendor.camera.isp.clock.optmz=0
+persist.vendor.camera.isp.turbo=1
+persist.vendor.camera.imglib.usefdlite=1
+persist.vendor.camera.expose.aux=1
+persist.vendor.camera.HAL3.enabled=1
+
+# add for exif info
+persist.vendor.camera.manufacturer=Xiaomi
+persist.vendor.camera.model=Redmi Note 7
 
 #set maximum supported adapter voltage
 persist.chg.max_volt_mv=9000
@@ -175,8 +189,28 @@ persist.chg.max_volt_mv=9000
 vendor.bluetooth.soc=cherokee
 persist.vendor.btstack.enable.splita2dp=true
 persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxhd-aac
+persist.vendor.btstack.avrcp-playstatus.blacklist=true
 
 # Property for backup NTP Server
 persist.backup.ntpServer="0.pool.ntp.org"
 # enable IZat OptInApp overlay
 persist.vendor.overlay.izat.optin=rro
+
+#disable awb sync in bokeh mode
+persist.vendor.camera.awb.sync=2
+
+#lct.ydt 20180911 add for voWIFI
+#iwaln vowifi corresponding
+persist.vendor.data.iwlan.enable=true
+
+#add for color invert
+ro.vendor.df.effect.conflict=1
+persist.sys.df.extcolor.proc=0
+#paper mode
+sys.paper_mode_max_level=255
+sys.tianma_nt36672a_offset=6
+sys.tianma_nt36672a_length=42
+sys.boe_td4320_offset=-9
+sys.boe_td4320_length=42
+sys.shenchao_nt36672a_offset=-10
+sys.shenchao_nt36672a_length=38
