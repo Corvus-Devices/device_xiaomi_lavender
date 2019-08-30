@@ -134,7 +134,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=403 \
     ro.vendor.display.cabl=2 \
     vendor.display.disable_skip_validate=1 \
-    vendor.display.enable_default_color_mode=1 \
+    vendor.display.enable_default_color_mode=0 \
     vendor.gralloc.enable_fb_ubwc=1
 
 # DRM
