@@ -694,4 +694,7 @@
 
     <!-- Define that we use a higher screen ratio (18:9) than standard (16:9) -->
     <bool name="config_haveHigherAspectRatioScreen">true</bool>
+
+    <!-- Smart replies in notifications: Whether we disable the feature unless the app targets P -->
+    <bool name="config_smart_replies_in_notifications_requires_targeting_p">false</bool>
 </resources>
