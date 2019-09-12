@@ -26,8 +26,8 @@ PRODUCT_MODEL := Redmi Note 7
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE="lavender" \
-    PRODUCT_NAME="lavender" \
+    PRODUCT_DEVICE=lavender \
+    PRODUCT_NAME=lavender \
     PRIVATE_BUILD_DESC="lavender-user 10 QKQ1.190910.002 20.3.19 release-key"
 
 BUILD_FINGERPRINT := "google/crosshatch/crosshatch:10/QQ2A.200405.005/6254899:user/release-keys"
