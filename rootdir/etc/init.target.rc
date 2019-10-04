@@ -119,6 +119,9 @@ on boot
 #Load WLAN driver
    insmod /vendor/lib/modules/qca_cld3_wlan.ko
 
+# Thermal Profile
+    write /sys/class/thermal/thermal_message/sconfig 0
+
 #USB controller configuration
     setprop vendor.usb.rndis.func.name "rndis_bam"
     setprop vendor.usb.rmnet.func.name "rmnet_bam"
