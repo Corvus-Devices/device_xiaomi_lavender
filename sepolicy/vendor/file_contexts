@@ -35,3 +35,8 @@
 
 # Video4linux sysfs nodes
 /sys/devices/soc/caa0000\.qcom,jpeg/video4linux/video1(/.*)?   u:object_r:sysfs_graphics:s0
+
+# HW Info
+/sys/devices/platform/HardwareInfo(/.*)? u:object_r:sysfs_info:s0
+/sys/devices/platform/HardwareInfo/gsensor  u:object_r:sysfs_info:s0
+
