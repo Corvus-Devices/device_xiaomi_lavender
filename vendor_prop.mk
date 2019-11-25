@@ -123,6 +123,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=libqti-perfd-client.so \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp \
     ro.opengles.version=196610 \
+    ro.sf.lcd_density=403 \
     sys.vendor.shutdown.waittime=500 \
     vendor.video.disable.ubwc=1
 
