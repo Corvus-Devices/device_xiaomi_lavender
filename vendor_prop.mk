@@ -113,6 +113,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
 
+# Media
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.display-size=1920x1080
 # Misc
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.qcomsysd.enabled=1 \
