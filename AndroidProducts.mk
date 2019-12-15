@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosip_lavender.mk
+    $(LOCAL_DIR)/du_lavender.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosip_lavender-user \
-    aosip_lavender-userdebug \
-    aosip_lavender-eng
+    du_lavender-user \
+    du_lavender-userdebug \
+    du_lavender-eng
