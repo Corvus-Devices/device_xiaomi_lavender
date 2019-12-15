@@ -172,7 +172,7 @@ PRODUCT_PACKAGES += \
     vendor.display.color@1.0-service \
     vendor.display.color@1.0-impl
 
-RODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     android.hardware.configstore@1.1-service \
     android.hardware.broadcastradio@1.0-impl
 
@@ -180,7 +180,7 @@ RODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
-	android.hardware.drm@1.2-service.clearkey
+    android.hardware.drm@1.2-service.clearkey
 
 # Exclude TOF sensor from InputManager
 PRODUCT_COPY_FILES += \
