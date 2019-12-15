@@ -253,17 +253,5 @@ WIFI_DRIVER_OPERSTATE_PATH := "/sys/class/net/wlan0/operstate"
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
-# Enable dex pre-opt to speed up initial boot
-ifeq ($(HOST_OS),linux)
-    ifeq ($(WITH_DEXPREOPT),)
-      WITH_DEXPREOPT := true
-      WITH_DEXPREOPT_PIC := true
-      ifneq ($(TARGET_BUILD_VARIANT),user)
-        # Retain classes.dex in APK's for non-user builds
-        DEX_PREOPT_DEFAULT := nostripping
-      endif
-    endif
-endif
-
 # inherit from the proprietary version
 -include vendor/xiaomi/lavender/BoardConfigVendor.mk
