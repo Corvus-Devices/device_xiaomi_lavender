@@ -65,6 +65,9 @@ vendor/lib/libdrc.so
 vendor/lib/libqtigef.so
 vendor/lib/libsurround_3mic_proc.so
 vendor/lib/soundfx/libasphere.so
+vendor/lib/soundfx/libqcbassboost.so
+vendor/lib/soundfx/libqcreverb.so
+vendor/lib/soundfx/libqcvirt.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
 vendor/lib64/libacdbrtac.so
@@ -74,6 +77,8 @@ vendor/lib64/libaudioalsa.so
 vendor/lib64/libaudioparsers.so
 vendor/lib64/libqtigef.so
 vendor/lib64/soundfx/libasphere.so
+vendor/lib64/soundfx/libqcbassboost.so
+vendor/lib64/soundfx/libqcvirt.so
 
 # Audio ACDB
 vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
@@ -414,6 +419,7 @@ vendor/lib/libchromatix_lavender_ov12a10_sunny_ii_default_video.so
 vendor/lib/libchromatix_lavender_ov12a10_sunny_ii_hfr_120_3a.so
 vendor/lib/libchromatix_lavender_ov12a10_sunny_ii_hfr_120.so
 vendor/lib/libchromatix_lavender_ov12a10_sunny_ii_hfr_60_3a.so
+vendor/lib/libchromatix_lavender_ov12a10_sunny_ii_hfr_60_its.so
 vendor/lib/libchromatix_lavender_ov12a10_sunny_ii_hfr_60.so
 vendor/lib/libchromatix_lavender_ov12a10_sunny_ii_hfr_90_3a.so
 vendor/lib/libchromatix_lavender_ov12a10_sunny_ii_hfr_90.so
@@ -631,6 +637,7 @@ vendor/lib/libchromatix_lavender_s5kgm1_ofilm_i_weixin_video_3a_res1.so
 vendor/lib/libchromatix_lavender_s5kgm1_ofilm_i_weixin_video_3a.so
 vendor/lib/libchromatix_lavender_s5kgm1_ofilm_i_zsl_preview_3a_sn.so
 vendor/lib/libchromatix_lavender_s5kgm1_ofilm_i_zsl_preview_3a.so
+vendor/lib/libchromatix_lavender_s5kgm1_ofilm_i_zsl_preview_3a_its.so
 vendor/lib/libchromatix_lavender_s5kgm1_ofilm_i_zsl_video_3a.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_ii_4k_preview_3a.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_ii_4k_video_3a.so
@@ -655,6 +662,7 @@ vendor/lib/libchromatix_lavender_s5kgm1_sunny_ii_cpp_video.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_ii_cpp_video_weixin_res1.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_ii_cpp_video_weixin.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_ii_default_preview_3a.so
+vendor/lib/libchromatix_lavender_s5kgm1_sunny_ii_default_preview_3a_its.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_ii_default_video_3a.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_ii_hfr_120_3a.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_ii_hfr_120.so
@@ -668,6 +676,7 @@ vendor/lib/libchromatix_lavender_s5kgm1_sunny_ii_preview_cts.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_ii_preview.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_ii_snapshot_bokeh.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_ii_snapshot_hdr.so
+vendor/lib/libchromatix_lavender_s5kgm1_sunny_ii_snapshot_its.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_ii_snapshot_sn.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_ii_snapshot.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_ii_video_4k.so
@@ -679,6 +688,7 @@ vendor/lib/libchromatix_lavender_s5kgm1_sunny_ii_weixin_video_3a.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_ii_zsl_preview_3a_sn.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_ii_zsl_preview_3a.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_ii_zsl_video_3a.so
+vendor/lib/libchromatix_lavender_s5kgm1_sunny_ii_zsl_preview_3a_its.so
 
 # Camera Global - For Redmi Note 7
 vendor/lib/libchromatix_lavender_ov13855_ofilm_global_i_common.so
@@ -927,6 +937,7 @@ vendor/lib/libchromatix_lavender_s5kgm1_ofilm_india_i_weixin_video_3a_res1.so
 vendor/lib/libchromatix_lavender_s5kgm1_ofilm_india_i_weixin_video_3a.so
 vendor/lib/libchromatix_lavender_s5kgm1_ofilm_india_i_zsl_preview_3a_sn.so
 vendor/lib/libchromatix_lavender_s5kgm1_ofilm_india_i_zsl_preview_3a.so
+vendor/lib/libchromatix_lavender_s5kgm1_ofilm_india_i_zsl_preview_3a_its.so
 vendor/lib/libchromatix_lavender_s5kgm1_ofilm_india_i_zsl_video_3a.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_india_ii_4k_preview_3a.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_india_ii_4k_video_3a.so
@@ -951,6 +962,7 @@ vendor/lib/libchromatix_lavender_s5kgm1_sunny_india_ii_cpp_video.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_india_ii_cpp_video_weixin_res1.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_india_ii_cpp_video_weixin.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_india_ii_default_preview_3a.so
+vendor/lib/libchromatix_lavender_s5kgm1_sunny_india_ii_default_preview_3a_its.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_india_ii_default_video_3a.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_india_ii_hfr_120_3a.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_india_ii_hfr_120.so
@@ -964,6 +976,7 @@ vendor/lib/libchromatix_lavender_s5kgm1_sunny_india_ii_preview_cts.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_india_ii_preview.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_india_ii_snapshot_bokeh.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_india_ii_snapshot_hdr.so
+vendor/lib/libchromatix_lavender_s5kgm1_sunny_india_ii_snapshot_its.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_india_ii_snapshot_sn.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_india_ii_snapshot.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_india_ii_video_4k.so
@@ -974,6 +987,7 @@ vendor/lib/libchromatix_lavender_s5kgm1_sunny_india_ii_weixin_video_3a_res1.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_india_ii_weixin_video_3a.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_india_ii_zsl_preview_3a_sn.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_india_ii_zsl_preview_3a.so
+vendor/lib/libchromatix_lavender_s5kgm1_sunny_india_ii_zsl_preview_3a_its.so
 vendor/lib/libchromatix_lavender_s5kgm1_sunny_india_ii_zsl_video_3a.so
 
 # Camera firmware
