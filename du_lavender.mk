@@ -12,6 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from lavender device
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
+# Inherit dalvik from native
+$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk )
+
 # Inherit some common DureX stuff.
 $(call inherit-product, vendor/du/config/common_full_phone.mk)
 
