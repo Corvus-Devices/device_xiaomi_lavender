@@ -1,0 +1,2 @@
+# Allow hal_graphics_composer_default to access vendor_mpctl_prop
+get_prop(hal_graphics_composer_default, vendor_mpctl_prop);
