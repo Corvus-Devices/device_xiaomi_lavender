@@ -40,7 +40,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.use.sw.ape.decoder=true \
     vendor.audio_hal.period_size=192 \
     vendor.audio.spkr_prot.tx.sampling_rate=48000 \
-    vendor.fm.a2dp.conc.disabled=true \
     vendor.voice.path.for.pcm.voip=true
 
 # Audio Feature
@@ -64,9 +63,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.feature.external_speaker_tfa.enable=false \
     vendor.audio.feature.fluence.enable=true \
     vendor.audio.feature.fm.enable=true \
-    vendor.audio.feature.hdmi_edid.enable=false \
-    vendor.audio.feature.hdmi_passthrough.enable=false \
-    vendor.audio.feature.hfp.enable=false \
+    vendor.audio.feature.hdmi_edid.enable=true \
+    vendor.audio.feature.hdmi_passthrough.enable=true \
+    vendor.audio.feature.hfp.enable=true \
     vendor.audio.feature.hifi_audio.enable=true \
     vendor.audio.feature.hwdep_cal.enable=false \
     vendor.audio.feature.incall_music.enable=false \
@@ -74,19 +73,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.feature.keep_alive.enable=false \
     vendor.audio.feature.kpi_optimize.enable=true \
     vendor.audio.feature.maxx_audio.enable=false \
-    vendor.audio.feature.ras.enable=false \
+    vendor.audio.feature.ras.enable=true \
     vendor.audio.feature.record_play_concurency.enable=false \
     vendor.audio.feature.src_trkn.enable=true \
-    vendor.audio.feature.spkr_prot.enable=false \
-    vendor.audio.feature.ssrec.enable=false \
-    vendor.audio.feature.usb_offload.enable=false \
+    vendor.audio.feature.spkr_prot.enable=true \
+    vendor.audio.feature.ssrec.enable=true \
+    vendor.audio.feature.usb_offload.enable=true \
     vendor.audio.feature.usb_offload_burst_mode.enable=false \
     vendor.audio.feature.usb_offload_sidetone_volume.enable=false \
     vendor.audio.feature.deepbuffer_as_primary.enable=false \
     vendor.audio.feature.vbat.enable=true \
     vendor.audio.feature.wsa.enable=true \
     vendor.audio.feature.audiozoom.enable=false \
-    vendor.audio.feature.snd_mon.enable=false
+    vendor.audio.feature.snd_mon.enable=true
 
 # Bluetooth & FM
 PRODUCT_PROPERTY_OVERRIDES += \

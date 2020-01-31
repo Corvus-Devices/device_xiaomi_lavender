@@ -52,6 +52,11 @@ PRODUCT_PACKAGES += \
     tinymix
 
 PRODUCT_PACKAGES += \
+    libsndmonitor \
+    libhdmiedid \
+    libhfp
+
+PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
     audio.bluetooth.default
 
