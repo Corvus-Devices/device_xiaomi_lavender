@@ -299,14 +299,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.qdutils_disp</name>
-        <version>1.0</version>
-        <interface>
-            <name>IQdutilsDisp</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
    <hal format="hidl" optional="true">
        <name>vendor.qti.hardware.radio.am</name>
        <version>1.0</version>
