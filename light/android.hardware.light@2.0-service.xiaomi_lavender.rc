@@ -1,6 +1,7 @@
 on boot
-    chown system system /sys/class/leds/red/brightness
+    # Notification LED
     chown system system /sys/class/leds/red/blink
+    chown system system /sys/class/leds/red/brightness
     chown system system /sys/class/leds/red/duty_pcts
     chown system system /sys/class/leds/red/pause_hi
     chown system system /sys/class/leds/red/pause_lo
@@ -8,6 +9,7 @@ on boot
     chown system system /sys/class/leds/red/start_idx
 
     chmod 660 /sys/class/leds/red/blink
+    chmod 660 /sys/class/leds/red/brightness
     chmod 660 /sys/class/leds/red/duty_pcts
     chmod 660 /sys/class/leds/red/pause_hi
     chmod 660 /sys/class/leds/red/pause_lo
@@ -15,9 +17,7 @@ on boot
     chmod 660 /sys/class/leds/red/start_idx
 
 service vendor.light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service.xiaomi_lavender
-    interface android.hardware.light@2.0::ILight default
     class hal
     user system
     group system
-    # shutting off lights while powering-off
     shutdown critical
