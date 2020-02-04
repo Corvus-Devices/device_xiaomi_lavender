@@ -30,6 +30,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="lavender" \
     PRIVATE_BUILD_DESC="lavender-user 9 PKQ1.180904.001 V10.3.9.0.PFGMIXM release-keys" \
 
-BUILD_FINGERPRINT := "xiaomi/lavender/lavender:9/PKQ1.180904.001/V10.3.9.0.PFGMIXM:user/release-keys"
+BUILD_FINGERPRINT := "google/crosshatch/crosshatch:10/QQ1A.200205.002/6084386:user/release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
