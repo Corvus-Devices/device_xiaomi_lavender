@@ -79,7 +79,6 @@ QCOM_BT_USE_BTNV := true
 TARGET_USE_QTI_BT_STACK := true
 
 # Camera
-USE_CAMERA_STUB := false
 TARGET_USES_QTI_CAMERA_DEVICE := true
 
 # Charger
@@ -87,10 +86,6 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 
 # CNE and DPM
 BOARD_USES_QCNE := true
-
-# CPUSets
-ENABLE_CPUSETS := true
-ENABLE_SCHEDBOOST := true
 
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
@@ -132,8 +127,6 @@ DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifests/framework_man
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifests/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/manifests/compatibility_matrix.xml
 
-# Init
-TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 
 # Keystore
 TARGET_PROVIDES_KEYMASTER := true
