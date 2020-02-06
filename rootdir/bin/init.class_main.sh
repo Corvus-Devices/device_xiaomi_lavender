@@ -41,6 +41,7 @@ case "$baseband" in
     stop ril-daemon
     stop vendor.ril-daemon
     stop vendor.qcrild
+    start vendor.ipacm
 esac
 
 case "$baseband" in
@@ -107,6 +108,9 @@ case "$baseband" in
           fi
         ;;
     esac
+
+    # start vendor.ipacm-diag
+    start vendor.ipacm
 
     multisim=`getprop persist.radio.multisim.config`
 
