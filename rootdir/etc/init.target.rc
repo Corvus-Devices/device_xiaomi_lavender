@@ -52,7 +52,6 @@ on fs
 
 on post-fs
     start vendor.qseecomd
-    exec - system system -- /vendor/bin/init.qti.qseecomd.sh
     write /dev/ipa 1
 
 on init
@@ -194,6 +193,7 @@ on property:sys.shutdown.requested=*
 #    start qrngp
 #
 service vendor.qseecomd /vendor/bin/qseecomd
+   shutdown critical
    class core
    user root
    group root

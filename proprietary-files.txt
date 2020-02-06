@@ -1187,37 +1187,68 @@ vendor/lib64/libdpmqmihal.so|d5b8330b56d7e0c036b00a817754748bf3137774
 
 # DRM
 vendor/bin/qseecomd
+vendor/lib/libbase64.so
+vendor/lib/libcpion.so
+vendor/lib/libcppf.so
+vendor/lib/libdrmfs.so
+vendor/lib/libdrmtime.so
+vendor/lib/libGPQTEEC_vendor.so
+vendor/lib/libGPreqcancel.so
+vendor/lib/libGPreqcancel_svc.so
+vendor/lib/libGPTEE_vendor.so
+vendor/lib/libqisl.so
 vendor/lib/libQSEEComAPI.so
+vendor/lib/librmp.so
+vendor/lib/librpmb.so
+vendor/lib/libsdedrm.so
+vendor/lib/libsecureui.so
+vendor/lib/libSecureUILib.so
+vendor/lib/libsecureui_svcsock.so
+vendor/lib/libsi.so
+vendor/lib/libssd.so
+vendor/lib/libStDrvInt.so
+vendor/lib/libtzdrmgenprov.so
+vendor/lib64/libbase64.so
+vendor/lib64/libcpion.so
 vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
-vendor/lib64/libGPreqcancel_svc.so
+vendor/lib64/libGPQTEEC_vendor.so
 vendor/lib64/libGPreqcancel.so
-vendor/lib64/libhdcpsrm.so
-vendor/lib64/liboemcrypto.so
+vendor/lib64/libGPreqcancel_svc.so
+vendor/lib64/libGPTEE_vendor.so
 vendor/lib64/libqisl.so
 vendor/lib64/libQSEEComAPI.so
+vendor/lib64/librmp.so
 vendor/lib64/librpmb.so
-vendor/lib64/libsecureui_svcsock.so
+vendor/lib64/libsdedrm.so
 vendor/lib64/libsecureui.so
 vendor/lib64/libSecureUILib.so
+vendor/lib64/libsecureui_svcsock.so
+vendor/lib64/libsi.so
 vendor/lib64/libssd.so
 vendor/lib64/libStDrvInt.so
 vendor/lib64/libtzdrmgenprov.so
 
-# DRM - Widevine
-vendor/bin/hw/android.hardware.drm@1.1-service.widevine
-vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
-vendor/lib/mediadrm/libdrmclearkeyplugin.so
+# DRM-HDCP
+vendor/bin/hdcp1prov
+vendor/bin/hdcp2p2prov
+vendor/lib/libhdcp1prov.so
+vendor/lib/libhdcp2p2prov.so
+vendor/lib/libhdcpsrm.so
+vendor/lib/libmm-hdcpmgr.so
+vendor/lib64/libhdcp1prov.so
+vendor/lib64/libhdcp2p2prov.so
+vendor/lib64/libhdcpsrm.so
+vendor/lib64/libmm-hdcpmgr.so
+
+# DRM-Widevine
+vendor/bin/hw/android.hardware.drm@1.2-service.widevine
+vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
+vendor/lib/liboemcrypto.so|ad286cf38f8b00a5c9b0b0f424e4a5bd1f47f046
 vendor/lib/mediadrm/libwvdrmengine.so
-vendor/lib/libbase64.so
-vendor/lib/libcpion.so
-vendor/lib/libcppf.so
+vendor/lib64/liboemcrypto.so|e44fa8bf9bed1541342390bf316c34fe9f29cc4e
 vendor/lib64/libwvhidl.so
-vendor/lib64/mediadrm/libdrmclearkeyplugin.so
 vendor/lib64/mediadrm/libwvdrmengine.so
-vendor/lib64/libbase64.so
-vendor/lib64/libcpion.so
-vendor/lib64/libcppf.so
 
 # ESE-Powermanager
 vendor/bin/hw/vendor.qti.esepowermanager@1.0-service
@@ -1283,9 +1314,7 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/lib/hw/gatekeeper.sdm660.so
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
-vendor/lib64/hw/gatekeeper.sdm660.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # GPS
@@ -1411,13 +1440,16 @@ vendor/lib64/libtinyxml2_1.so|70942325afdd14eedcf11b3fbbfbc3d98f42f8dc
 vendor/lib/hw/vulkan.sdm660.so|f78259ff9c113ca8ae16df5efd0a05d9a3cd4a29
 vendor/lib64/hw/vulkan.sdm660.so|2ddf11008f7fc0b32f151d83bf64f756c5879dd9
 
-# Keystore
+# Keymaster
+vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
 vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
+vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
 vendor/lib/libkeymasterdeviceutils.so
 vendor/lib/libkeymasterprovision.so
 vendor/lib/libkeymasterutils.so
 vendor/lib/libqtikeymaster4.so
+vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
@@ -1539,6 +1571,13 @@ vendor/lib64/libqmi_common_so.so|325a41290032b082248db307481811b2319284cc
 vendor/lib64/libqmi_csi.so|b7de2a57e4ac58353e89fdf2c7f4778dcc72cd2d
 vendor/lib64/libqmi_encdec.so|eedf39676bf4447cb2e3f629d1d18dcad846ab85
 vendor/lib64/libqmiservices.so|9f6101c34a8b6efebb116dc03f1aa258aa21ec8c
+
+# Qteeconnector
+vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
+vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
+vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
+vendor/lib64/libQTEEConnector_vendor.so
+vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
 # Radio - from LA.UM.8.2.r1-05100-sdm660.0
 -product/app/datastatusnotification/datastatusnotification.apk|9d0bae96aa9f156534074b515c66126d13db5413
