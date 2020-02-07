@@ -161,7 +161,7 @@ ro.vendor.sensors.sta_detect=true
 #Motion Detector
 ro.vendor.sensors.mot_detect=true
 #enable pickup gesture
-ro.vendor.sensors.pug =true
+ro.vendor.sensors.pug=true
 
 #Expose aux camera for below packages
 vendor.camera.aux.packagelist=org.codeaurora.snapcam
@@ -184,6 +184,9 @@ persist.vendor.camera.model=Redmi Note 7
 
 #set maximum supported adapter voltage
 persist.chg.max_volt_mv=9000
+persist.dirac.acs.controller=qem
+persist.dirac.acs.storeSettings=1
+persist.dirac.acs.ignore_error=1
 
 #system prop for Bluetooth SOC type
 vendor.bluetooth.soc=cherokee
@@ -195,6 +198,9 @@ persist.vendor.btstack.avrcp-playstatus.blacklist=true
 persist.backup.ntpServer="0.pool.ntp.org"
 # enable IZat OptInApp overlay
 persist.vendor.overlay.izat.optin=rro
+
+#use camera2 api
+persist.sys.camera.camera2=true
 
 #disable awb sync in bokeh mode
 persist.vendor.camera.awb.sync=2
@@ -214,3 +220,6 @@ sys.boe_td4320_offset=-9
 sys.boe_td4320_length=42
 sys.shenchao_nt36672a_offset=-10
 sys.shenchao_nt36672a_length=38
+
+#thermal configs path
+sys.thermal.data.path=/data/thermal/

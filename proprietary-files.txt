@@ -1738,21 +1738,26 @@ vendor/lib64/vendor.qti.imsrtpservice@2.0.so|45fd8c212f51977663082b496755911c986
 vendor/lib64/vendor.qti.imsrtpservice@2.1-service-Impl.so|1673fd7b807dcc317cc73c82c2773d5bbb0302df
 vendor/lib64/vendor.qti.imsrtpservice@2.1.so|780288d1d8d79fa16fbbe9bce6edaa4e1424cdb1
 
-# Sensors
-vendor/etc/elliptic_sensor.xml
-vendor/bin/sensors.qti
+# Sensor-configs
+vendor/etc/sensors/elliptic.conf
 vendor/etc/sensors/sensor_def_qcomdev.conf
+
+# Sensors
+vendor/bin/sensors.qti
+vendor/etc/elliptic_sensor.xml
 vendor/lib/hw/activity_recognition.sdm660.so
-vendor/etc/Diag.cfg
-vendor/lib/libsensor_reg.so
 vendor/lib/libsensor1.so
+vendor/lib/libsensor_reg.so
+vendor/lib/libssc_default_listener.so
 vendor/lib/sensors.ssc.so
+vendor/lib/sensor_calibrate.so
 vendor/lib64/hw/activity_recognition.sdm660.so
-vendor/lib64/libnotifyaudiohal.so
-vendor/lib64/libsensor_reg.so
 vendor/lib64/libsensor1.so
-vendor/lib64/sensors.ssc.so
+vendor/lib64/libsensor_reg.so
+vendor/lib64/libssc_default_listener.so
 vendor/lib64/sensors.elliptic.so
+vendor/lib64/sensors.ssc.so
+vendor/lib64/sensor_calibrate.so
 
 # Soter - lavender
 -app/SoterService/SoterService.apk
