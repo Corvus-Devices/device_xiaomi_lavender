@@ -31,7 +31,7 @@ namespace {
 
 #define LEDS "/sys/class/leds/"
 #define LCD_LED LEDS "lcd-backlight/"
-#define WHITE LEDS "white/"
+#define WHITE LEDS "red/"
 #define BRIGHTNESS "brightness"
 #define MAX_BRIGHTNESS "max_brightness"
 #define BLINK "blink"
