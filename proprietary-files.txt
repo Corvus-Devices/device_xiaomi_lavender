@@ -1766,6 +1766,7 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so|b08f0d2e92e0adce42127b5f978fa6bb22
 # Thermal
 vendor/bin/thermal-engine
 -vendor/lib/libthermalclient.so
+vendor/lib/libthermalfeature.so
 -vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalfeature.so
 vendor/lib64/libthermalioctl.so
