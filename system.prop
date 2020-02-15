@@ -18,9 +18,9 @@ ril.subscription.types=NV,RUIM
 DEVICE_PROVISIONED=1
 
 #
-# Set network mode to (T/L/G/W/1X/EVDO, T/G/W/L) for 7+5 mode device on DSDS mode
+# Set network mode to (T/L/G/W/1X/EVDO, T/G/W/L) for 7+7 mode device on DSDS mode
 #
-ro.telephony.default_network=22,20
+ro.telephony.default_network=22,22
 
 debug.sf.enable_hwc_vds=1
 debug.sf.hw=1
@@ -90,8 +90,8 @@ bt.max.hfpclient.connections=1
 persist.bt.a2dp.aac_disable=true
 
 # System property for cabl
-ro.qualcomm.cabl=2
-ro.vendor.display.cabl=2
+ro.qualcomm.cabl=0
+ro.vendor.display.cabl=0
 
 #
 # System props for telephony
@@ -103,8 +103,8 @@ telephony.lteOnCdmaDevice=1
 persist.fuse_sdcard=true
 
 #system prop for wipower support
-ro.bluetooth.emb_wp_mode=true
-ro.bluetooth.wipower=true
+#ro.bluetooth.emb_wp_mode=true
+#ro.bluetooth.wipower=true
 
 #
 #snapdragon value add features
