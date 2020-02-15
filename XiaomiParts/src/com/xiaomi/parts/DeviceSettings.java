@@ -10,6 +10,7 @@ import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceFragment;
 
 import com.xiaomi.parts.kcal.KCalSettingsActivity;
+import com.xiaomi.parts.ambient.AmbientGesturePreferenceActivity;
 import com.xiaomi.parts.preferences.SecureSettingListPreference;
 import com.xiaomi.parts.preferences.SecureSettingSwitchPreference;
 import com.xiaomi.parts.preferences.VibrationSeekBarPreference;
@@ -44,6 +45,8 @@ public class DeviceSettings extends PreferenceFragment implements
     //        "spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d300/leds/led:torch_0/max_brightness";
     //private static final String TORCH_2_BRIGHTNESS_PATH = "/sys/devices/soc/800f000.qcom," +
     //        "spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d300/leds/led:torch_1/max_brightness";
+
+    private Preference mAmbientPref;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -91,11 +94,20 @@ public class DeviceSettings extends PreferenceFragment implements
         PreferenceCategory displayCategory = (PreferenceCategory) findPreference(CATEGORY_DISPLAY);
 
         Preference kcal = findPreference(PREF_DEVICE_KCAL);
-
         kcal.setOnPreferenceClickListener(preference -> {
             Intent intent = new Intent(getActivity().getApplicationContext(), KCalSettingsActivity.class);
             startActivity(intent);
             return true;
+        });
+
+        mAmbientPref = findPreference("ambient_display_gestures");
+        mAmbientPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+            @Override
+            public boolean onPreferenceClick(Preference preference) {
+                Intent intent = new Intent(getContext(), AmbientGesturePreferenceActivity.class);
+                startActivity(intent);
+                return true;
+            }
         });
     }
 
