@@ -124,9 +124,6 @@ USE_DEVICE_SPECIFIC_GPS := true
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifests/framework_manifest.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifests/manifest.xml
 
-# Keystore
-TARGET_PROVIDES_KEYMASTER := true
-
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
 
