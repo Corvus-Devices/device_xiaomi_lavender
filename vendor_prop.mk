@@ -90,7 +90,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Bluetooth & FM
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.qcom.bluetooth.soc=cherokee \
-    persist.bluetooth.bluetooth_audio_hal.disabled=true \
+    persist.bluetooth.a2dp_offload.disabled=false \
+    persist.bluetooth.bluetooth_audio_hal.disabled=false \
+    persist.vendor.qcom.bluetooth.enable.splita2dp=false \
     ro.vendor.bluetooth.wipower=false \
     persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac \
     vendor.fm.a2dp.conc.disabled=true \
