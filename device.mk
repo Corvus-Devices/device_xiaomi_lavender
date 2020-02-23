@@ -40,7 +40,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-service \
     android.hardware.audio.effect@5.0-impl \
     android.hardware.soundtrigger@2.2-impl \
-    audio.a2dp.default \
     audio_amplifier.sdm660 \
     audio.primary.sdm660 \
     audio.r_submix.default \
@@ -57,10 +56,6 @@ PRODUCT_PACKAGES += \
     libsndmonitor \
     libhdmiedid \
     libhfp
-
-PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio@2.0-impl \
-    audio.bluetooth.default
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
@@ -83,11 +78,6 @@ PRODUCT_COPY_FILES += \
     $(TOPDIR)frameworks/av/services/audiopolicy/config/default_volume_tables.xml:/$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     $(TOPDIR)frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:/$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
 
-# Bluetooth
-PRODUCT_PACKAGES += \
-    libbthost_if \
-    libldacBT_dec
-
 # Alipay
 PRODUCT_PACKAGES += \
     org.ifaa.android.manager
@@ -102,6 +92,14 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+    audio.a2dp.default \
+    audio.bluetooth.default \
+    android.hardware.bluetooth.audio@2.0-impl \
+    libbthost_if \
+    libldacBT_dec
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -142,10 +140,6 @@ PRODUCT_PACKAGES += \
     liboverlay \
     libtinyxml \
     memtrack.sdm660
-
-PRODUCT_PACKAGES += \
-    vendor.display.color@1.0-service \
-    vendor.display.color@1.0-impl
 
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.1-service \
@@ -363,9 +357,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf
-
-# Preopt SystemUI
-PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
 
 # QMI
 PRODUCT_PACKAGES += \
