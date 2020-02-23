@@ -1,3 +1,1 @@
-allow hal_sensors_default sysfs:file { read open };
-allow hal_sensors_default vndbinder_device:chr_file ioctl;
-allow hal_sensors_default vndservicemanager:binder {call transfer };
+set_prop(hal_sensors_default, camera_prop) 
