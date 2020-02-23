@@ -85,7 +85,8 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    libbthost_if
+    libbthost_if \
+    libldacBT_dec
 
 # Alipay
 PRODUCT_PACKAGES += \
