@@ -25,6 +25,8 @@
 # XiaomiParts
 /sys/devices/platform/kcal_ctrl.0(/.*)?         u:object_r:kcal_dev:s0
 /sys/bus/platform/drivers/kcal_ctrl(/.*)?       u:object_r:kcal_dev:s0
+/sys/kernel/sound_control/headphone_gain        u:object_r:sysfs_headgain:s0
+/sys/kernel/sound_control/mic_gain              u:object_r:sysfs_micgain:s0
 
 # Mlipay
 /(vendor|system/vendor)/bin/mlipayd@1.1         u:object_r:hal_mlipay_default_exec:s0
