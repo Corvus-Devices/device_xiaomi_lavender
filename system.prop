@@ -163,6 +163,25 @@ ro.vendor.sensors.mot_detect=true
 #enable pickup gesture
 ro.vendor.sensors.pug=true
 
+#Expose aux camera for below packages
+vendor.camera.aux.packagelist=org.codeaurora.snapcam
+
+#Whitelisting the below packages
+persist.vendor.camera.privapp.list=org.codeaurora.snapcam
+persist.camera.privapp.list=org.codeaurora.snapcam
+
+#disable UBWC for camera
+persist.vendor.camera.preview.ubwc=0
+persist.vendor.camera.isp.clock.optmz=0
+persist.vendor.camera.isp.turbo=1
+persist.vendor.camera.imglib.usefdlite=1
+persist.vendor.camera.expose.aux=1
+persist.vendor.camera.HAL3.enabled=1
+
+# add for exif info
+persist.vendor.camera.manufacturer=Xiaomi
+persist.vendor.camera.model=Redmi Note 7
+
 #set maximum supported adapter voltage
 persist.chg.max_volt_mv=9000
 persist.dirac.acs.controller=qem
@@ -182,6 +201,9 @@ persist.vendor.overlay.izat.optin=rro
 
 #use camera2 api
 persist.sys.camera.camera2=true
+
+#disable awb sync in bokeh mode
+persist.vendor.camera.awb.sync=2
 
 #lct.ydt 20180911 add for voWIFI
 #iwaln vowifi corresponding
