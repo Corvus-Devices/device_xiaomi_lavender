@@ -131,7 +131,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    copybit.sdm660 \
     gralloc.sdm660 \
     hwcomposer.sdm660 \
     libdisplayconfig \
@@ -458,21 +457,15 @@ PRODUCT_PACKAGES += \
     vndk-ext \
     vndk_package
 
-# Wifi
+# WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     hostapd \
     hostapd_cli \
-    libqsap_sdk \
-    libQWiFiSoftApCfg \
     libwifi-hal-qcom \
-    libwpa_client \
-    vendor.qti.hardware.wifi.supplicant@1.0_vendor \
     wificond \
-    wifilogd \
     wpa_supplicant \
-    wpa_supplicant.conf \
-    wpa_cli
+    wpa_supplicant.conf
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
