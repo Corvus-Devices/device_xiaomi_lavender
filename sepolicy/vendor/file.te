@@ -8,3 +8,4 @@ type kcal_dev, sysfs_type, fs_type;
 type sysfs_headgain, sysfs_type, fs_type;
 type sysfs_micgain, sysfs_type, fs_type;
 type sysfs_backlightdim, sysfs_type, fs_type;
+type sysfs_tap_to_wake, sysfs_type, fs_type;
