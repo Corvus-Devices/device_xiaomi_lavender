@@ -21,15 +21,17 @@ import com.xiaomi.parts.R;
 public class DeviceSettings extends PreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
-    public static final String PREF_VIBRATION_STRENGTH = "vibration_strength";
-    public static final String VIBRATION_STRENGTH_PATH = "/sys/devices/virtual/timed_output/vibrator/vtg_level";
-
     private static final String CATEGORY_DISPLAY = "display";
     private static final String PREF_DEVICE_KCAL = "device_kcal";
+
+    private static final String AMBIENT_DISPLAY = "ambient_display_gestures";
 
     private static final String PREF_ENABLE_DIRAC = "dirac_enabled";
     private static final String PREF_HEADSET = "dirac_headset_pref";
     private static final String PREF_PRESET = "dirac_preset_pref";
+
+    public static final String PREF_VIBRATION_STRENGTH = "vibration_strength";
+    public static final String VIBRATION_STRENGTH_PATH = "/sys/devices/virtual/timed_output/vibrator/vtg_level";
 
     // value of vtg_min and vtg_max
     public static final int MIN_VIBRATION = 116;
@@ -47,8 +49,6 @@ public class DeviceSettings extends PreferenceFragment implements
     //        "spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d300/leds/led:torch_0/max_brightness";
     //private static final String TORCH_2_BRIGHTNESS_PATH = "/sys/devices/soc/800f000.qcom," +
     //        "spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d300/leds/led:torch_1/max_brightness";
-
-    private Preference mAmbientPref;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -95,13 +95,10 @@ public class DeviceSettings extends PreferenceFragment implements
 
         PreferenceCategory displayCategory = (PreferenceCategory) findPreference(CATEGORY_DISPLAY);
 
-        if (FileUtils.fileWritable(BACKLIGHT_DIMMER_PATH)) {
-            SecureSettingSwitchPreference backlightDimmer = (SecureSettingSwitchPreference) findPreference(PREF_BACKLIGHT_DIMMER);
-            backlightDimmer.setChecked(FileUtils.getFileValueAsBoolean(BACKLIGHT_DIMMER_PATH, false));
-            backlightDimmer.setOnPreferenceChangeListener(this);
-        } else {
-            getPreferenceScreen().removePreference(findPreference(PREF_BACKLIGHT_DIMMER));
-        }
+        SecureSettingSwitchPreference backlightDimmer = (SecureSettingSwitchPreference) findPreference(PREF_BACKLIGHT_DIMMER);
+        backlightDimmer.setEnabled(BacklightDimmer.isSupported());
+        backlightDimmer.setChecked(BacklightDimmer.isCurrentlyEnabled(this.getContext()));
+        backlightDimmer.setOnPreferenceChangeListener(new BacklightDimmer(getContext()));
 
         Preference kcal = findPreference(PREF_DEVICE_KCAL);
         kcal.setOnPreferenceClickListener(preference -> {
@@ -110,14 +107,11 @@ public class DeviceSettings extends PreferenceFragment implements
             return true;
         });
 
-        mAmbientPref = findPreference("ambient_display_gestures");
-        mAmbientPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-            @Override
-            public boolean onPreferenceClick(Preference preference) {
-                Intent intent = new Intent(getContext(), AmbientGesturePreferenceActivity.class);
-                startActivity(intent);
-                return true;
-            }
+        Preference ambientDisplay = findPreference(AMBIENT_DISPLAY);
+        ambientDisplay.setOnPreferenceClickListener(preference -> {
+            Intent intent = new Intent(getContext(), AmbientGesturePreferenceActivity.class);
+            startActivity(intent);
+            return true;
         });
     }
 
@@ -168,10 +162,6 @@ public class DeviceSettings extends PreferenceFragment implements
                     getContext().startService(new Intent(getContext(), DiracService.class));
                     DiracService.sDiracUtils.setLevel(String.valueOf(value));
                 }
-                break;
-
-            case PREF_BACKLIGHT_DIMMER:
-                FileUtils.setValue(BACKLIGHT_DIMMER_PATH, (boolean) value);
                 break;
 
             default:

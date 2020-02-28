@@ -55,7 +55,6 @@
         android:title="@string/display_title">
 
         <com.xiaomi.parts.preferences.SecureSettingSwitchPreference
-            android:defaultValue="false"
             android:key="backlight_dimmer"
             android:icon="@drawable/ic_backlight"
             android:title="@string/backlight_dimmer"
