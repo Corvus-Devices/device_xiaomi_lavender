@@ -54,6 +54,13 @@
         android:key="display"
         android:title="@string/display_title">
 
+        <SwitchPreference
+            android:key="fps_info"
+            android:icon="@drawable/ic_fps_info"
+            android:title="@string/fps_info_title"
+            android:summary="@string/fps_info_summary"
+            android:persistent="true" />
+
         <com.xiaomi.parts.preferences.SecureSettingSwitchPreference
             android:key="backlight_dimmer"
             android:icon="@drawable/ic_backlight"
