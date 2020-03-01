@@ -6,8 +6,6 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 
-import android.os.SystemProperties;
-
 public class FileUtils {
 
     static boolean fileWritable(String filename) {
@@ -128,13 +126,5 @@ public class FileUtils {
         }
         // ignore
         return line;
-    }
-
-    static void setProp(String prop, boolean value) {
-        if (value) {
-            SystemProperties.set(prop, "1");
-        } else {
-            SystemProperties.set(prop, "0");
-        }
     }
 }

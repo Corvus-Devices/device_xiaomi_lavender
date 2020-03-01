@@ -1,2 +1,5 @@
 allow init firmware_file:filesystem getattr;
 allow init bt_firmware_file:filesystem getattr;
+
+# Allow init to chown/chmod on pseudo files in /sys
+allow init sysfs_type:file { setattr };

@@ -24,7 +24,6 @@
 /sys/kernel/sound_control/headphone_gain                     u:object_r:sysfs_headgain:s0
 /sys/kernel/sound_control/mic_gain                           u:object_r:sysfs_micgain:s0
 /sys/module/mdss_fb/parameters/backlight_dimmer              u:object_r:sysfs_backlightdim:s0
-/sys/module/mdss_fb/parameters/backlight_dimmer              u:object_r:sysfs_backlightdim:s0
 /sys/class/graphics/fb0/measured_fps                         u:object_r:sysfs_fpsinfo:s0
 
 # Mlipay
