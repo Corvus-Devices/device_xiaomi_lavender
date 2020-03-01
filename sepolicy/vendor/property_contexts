@@ -43,3 +43,6 @@ wifi.active.interface                   u:object_r:wifi_prop:s0
 
 # Dirac
 persist.audio.dirac.                    u:object_r:dirac_prop:s0
+
+# PowerHAL
+vendor.powerhal.init                    u:object_r:power_prop:s0
