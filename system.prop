@@ -115,6 +115,7 @@ ro.vendor.use_data_netmgrd=true
 telephony.lteOnCdmaDevice=1
 
 # SurfaceFlinger
+debug.gralloc.gfx_ubwc_disable=1
 debug.sf.disable_backpressure=1
 debug.sf.early_phase_offset_ns=1500000
 debug.sf.early_app_phase_offset_ns=1500000
@@ -124,6 +125,7 @@ debug.sf.enable_gl_backpressure=1
 debug.sf.enable_hwc_vds=1
 debug.sf.hw=1
 debug.sf.latch_unsignaled=1
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.max_virtual_display_dimension=4096
 ro.surface_flinger.vsync_event_phase_offset_ns=2000000

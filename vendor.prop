@@ -160,6 +160,7 @@ qemu.hw.mainkeys=0
 ro.build.shutdown_timeout=0
 ro.control_privapp_permissions=log
 ro.vendor.extension_library=libqti-perfd-client.so
+ro.vendor.qti.sys.fw.bservice_enable=true
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 sys.vendor.shutdown.waittime=500
 
