@@ -7,9 +7,7 @@
 $(call inherit-product, vendor/xiaomi/lavender/lavender-vendor.mk)
 
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
-
-# Set boot SPL
-BOOT_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
+PLATFORM_SECURITY_PATCH_OVERRIDE := 2020-03-05
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
