@@ -157,12 +157,9 @@ vendor.video.disable.ubwc=1
 
 # Misc
 qemu.hw.mainkeys=0
-ro.build.shutdown_timeout=0
-ro.control_privapp_permissions=log
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.qti.sys.fw.bservice_enable=true
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
-sys.vendor.shutdown.waittime=500
 
 # Radio
 persist.vendor.radio.apm_sim_not_pwdn=1
@@ -177,7 +174,6 @@ persist.sys.fflag.override.settings_network_and_internet_v2=true
 rild.libpath=/system/vendor/lib64/libril-qc-hal-qmi.so
 ro.telephony.use_old_mnc_mcc_format=true
 ro.telephony.iwlan_operation_mode=legacy
-ro.com.android.dataroaming=false
 
 # Radio IMS
 persist.dbg.ims_volte_enable=1
