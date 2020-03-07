@@ -66,9 +66,11 @@ public class DeviceSettings extends PreferenceFragment implements
         vibrationStrength.setOnPreferenceChangeListener(this);
 
         CustomSeekBarPreference headphone_gain = (CustomSeekBarPreference) findPreference(PREF_HEADPHONE_GAIN);
+        headphone_gain.setEnabled(FileUtils.fileWritable(HEADPHONE_GAIN_PATH));
         headphone_gain.setOnPreferenceChangeListener(this);
 
         CustomSeekBarPreference microphone_gain = (CustomSeekBarPreference) findPreference(PREF_MICROPHONE_GAIN);
+        microphone_gain.setEnabled(FileUtils.fileWritable(MICROPHONE_GAIN_PATH));
         microphone_gain.setOnPreferenceChangeListener(this);
 
         //CustomSeekBarPreference torch_brightness = (CustomSeekBarPreference) findPreference(PREF_TORCH_BRIGHTNESS);
