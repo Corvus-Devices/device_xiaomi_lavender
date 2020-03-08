@@ -448,6 +448,7 @@
     state changes. Voice radio tech change will always trigger an update of
     phone object irrespective of this config -->
     <bool name="config_switch_phone_on_voice_reg_state_change">false</bool>
+
     <!--  Define Google play service package for FRP-->
     <string name="config_persistentDataPackageName" translatable="false">com.google.android.gms</string>
 
@@ -523,7 +524,6 @@
       <item>"/apex/com.android.runtime/javalib/core-libart.jar"</item>
       <item>"/apex/com.android.media/javalib/updatable-media.jar"</item>
       <item>"/product/priv-app/SystemUI/SystemUI.apk"</item>
-      <item>"/product/priv-app/SystemUI/oat/arm64/SystemUI.odex"</item>
       <item>/system/lib64/libRScpp.so</item>
       <item>/system/lib64/libRS.so</item>
       <item>/system/lib64/libRS_internal.so</item>
@@ -632,11 +632,6 @@
     <!-- True if the firmware supports Wi-Fi link probing -->
     <bool name="config_wifi_link_probing_supported">true</bool>
 
-    <!-- Enables or disables haptic effect when the text insertion/selection handle is moved
-      manually by the user. Off by default, since the expected haptic feedback may not be
-      available on some devices. -->
-    <bool name="config_enableHapticTextHandle">true</bool>
-
     <!-- Boolean indicating if current platform supports HFP inband ringing -->
     <bool name="config_bluetooth_hfp_inband_ringing_support">true</bool>
 
@@ -660,9 +655,6 @@
 
     <!-- Telephony qualified networks service package name to bind to by default. -->
     <string name="config_qualified_networks_service_package">vendor.qti.iwlan</string>
-
-    <!-- Flashlight on power button -->
-    <integer name="config_flashlightProximityTimeout">-1</integer>
 
     <!-- Specifies the path that is used by AdaptiveIconDrawable class to crop launcher icons. -->
     <string name="config_icon_mask" translatable="false">"M50 0C77.6 0 100 22.4 100 50C100 77.6 77.6 100 50 100C22.4 100 0 77.6 0 50C0 22.4 22.4 0 50 0Z"</string>
