@@ -15,10 +15,13 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package com.xiaomi.parts;
+package com.xiaomi.parts.tile;
 
 import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
+
+import com.xiaomi.parts.FileUtils;
+import com.xiaomi.parts.BacklightDimmer;
 
 public class DimmerTile extends TileService {
 

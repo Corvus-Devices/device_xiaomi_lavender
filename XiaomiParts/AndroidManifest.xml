@@ -9,7 +9,7 @@
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.INJECT_EVENTS"/>
 
-    <uses-sdk android:minSdkVersion="28" />
+    <uses-sdk android:minSdkVersion="29" />
 
     <protected-broadcast android:name="com.android.systemui.doze.pulse" />
     <protected-broadcast android:name="com.xiaomi.parts.CUST_UPDATE" />
@@ -73,7 +73,7 @@
         </service>
 
         <activity
-            android:name="com.xiaomi.parts.ambient.AmbientGesturePreferenceActivity"
+            android:name=".ambient.AmbientGesturePreferenceActivity"
             android:icon="@drawable/ic_doze"
             android:theme="@style/CustomOptionsTheme"
             android:label="@string/ambient_display_gestures_title">
@@ -88,7 +88,7 @@
             android:stopWithTask="false" />
 
         <service
-            android:name=".XiaomiPartsTile"
+            android:name=".tile.XiaomiPartsTile"
             android:enabled="true"
             android:icon="@drawable/qs_xiaomi"
             android:label="@string/xiaomiparts_title"
@@ -99,7 +99,7 @@
         </service>
 
         <service
-            android:name=".DimmerTile"
+            android:name=".tile.DimmerTile"
             android:icon="@drawable/ic_backlight"
             android:label="@string/backlight_dimmer"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -113,7 +113,7 @@
             android:exported="false">
         </service>
         <service
-            android:name=".FPSTileService"
+            android:name=".tile.FPSTileService"
             android:icon="@drawable/ic_fps_info"
             android:label="@string/fps_info_title"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
