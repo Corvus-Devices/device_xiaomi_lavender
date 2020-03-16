@@ -1703,20 +1703,18 @@ vendor/lib64/vendor.qti.imsrtpservice@2.1.so|780288d1d8d79fa16fbbe9bce6edaa4e142
 # Sensor-configs
 vendor/etc/sensors/elliptic.conf
 vendor/etc/sensors/sensor_def_qcomdev.conf
+vendor/etc/elliptic_sensor.xml
 
 # Sensors
 vendor/bin/sensors.qti
-vendor/etc/elliptic_sensor.xml
 vendor/lib/hw/activity_recognition.sdm660.so
 vendor/lib/libsensor1.so
 vendor/lib/libsensor_reg.so
-vendor/lib/libssc_default_listener.so
 vendor/lib/sensors.ssc.so
 vendor/lib/sensor_calibrate.so
 vendor/lib64/hw/activity_recognition.sdm660.so
 vendor/lib64/libsensor1.so
 vendor/lib64/libsensor_reg.so
-vendor/lib64/libssc_default_listener.so
 vendor/lib64/sensors.elliptic.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/sensor_calibrate.so
