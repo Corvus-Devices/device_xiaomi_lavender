@@ -37,7 +37,7 @@ start_sensors()
     start vendor.sensors.qti
 
     # Only for SLPI
-    if [ -c /dev/msm_dsps -o -c /dev/sensors ] && [ -z "$sscrpcd_status" ]; then
+    if [ -c /dev/msm_dsps -o -c /dev/sensors ] ; then
         start vendor.sensors
     fi
 }
