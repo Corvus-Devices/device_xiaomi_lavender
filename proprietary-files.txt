@@ -1,36 +1,41 @@
-# ADSP
-vendor/bin/adsprpcd
-vendor/lib/libadsprpc.so
-vendor/lib/libadsp_default_listener.so
-vendor/lib/libadsp_hvx_callback_skel.so
-vendor/lib/libadsp_hvx_stub.so
-vendor/lib/libfastcvadsp_stub.so
-vendor/lib/libfastcvopt.so
-vendor/lib/libmdsprpc.so
-vendor/lib/libsdsprpc.so
-vendor/lib64/libadsprpc.so
-vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libfastcvadsp_stub.so
-vendor/lib64/libfastcvopt.so
-vendor/lib64/libmdsprpc.so
-vendor/lib64/libsdsprpc.so
+# ADSP - from LA.UM.8.2.r1-05100-sdm660.0
+vendor/bin/adsprpcd|5b803e679ddbce4e59c2a67433ffefa6396d61f3
+vendor/lib/libadsp_default_listener.so|9c96cb953e83b6abc90dfbf4b62af7ddbecd97b7
+vendor/lib/libadsp_hvx_callback_skel.so|67cb46e6da3fa84d0cf086172591ba13493e663f
+vendor/lib/libadsp_hvx_stub.so|b3e1d3eef6cfdd51213dad37a8972bc931d1c139
+vendor/lib/libadsprpc.so|c95566209eff0d3e6e7edb3166273ad20dd03297
+vendor/lib/libcdsprpc.so|b0904719623aab0d7381e9ac61cce7809dfad0b6
+vendor/lib/libfastcvadsp_stub.so|9957df1493863d78da261ab3bb8756be3f3d2583
+vendor/lib/libfastcvopt.so|00f5293affa2fcc606b0044f707761c0bb975365
+vendor/lib/libmdsprpc.so|6b3c9f62d95ba9a65d9ce2d21530fa36ebed2414
+vendor/lib/libsdsprpc.so|09e6c5093e6322c71ca98c53865aa5402e415538
+vendor/lib64/libadsp_default_listener.so|ec9a452e318db1ddc5d826dd7cc2b14dd5fb2a14
+vendor/lib64/libadsprpc.so|54fea5f7c11b9913ed2eeb125804e0fb32ed5e21
+vendor/lib64/libcdsprpc.so|44e6a3aec6457464ac87f71680e443fd1c933d16
+vendor/lib64/libfastcvadsp_stub.so|f84fd537f8f176e598c0cb49f0c457f308b67be4
+vendor/lib64/libfastcvopt.so|59d111f7472ed70390d15944a5f304db848447e4
+vendor/lib64/libmdsprpc.so|f9eb09c64dcd2ec4356bab8d1d242901d271edb0
+vendor/lib64/libsdsprpc.so|99b6b23efeefc5204fb9eb0fb174b73494c7602b
 
-# ADSP-Modules
-vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
-vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
+# ADSP modules - from LA.UM.8.2.r1-05100-sdm660.0
+vendor/lib/rfsa/adsp/libadsp_fd_skel.so|677d2932dac248049f031fc5893163e22b49439a
+vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so|26fb64a92d48e801a31a867976d325efa366a255
+vendor/lib/rfsa/adsp/libadsp_hvx_skel.so|05776246445316aea822eaa9cb6ae7a47b23c9aa
+vendor/lib/rfsa/adsp/libapps_mem_heap.so|fd362c6b0e30f62cc3fc4566855f46706d2c3c50
+vendor/lib/rfsa/adsp/libdspCV_skel.so|a788855fe98d5f6ea73d2693c983efb29165eae1
+vendor/lib/rfsa/adsp/libfastcvadsp.so|603711dc1af1f1952d8978a5b494b1541b24c54c
+vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|a06a3f52e89d219d2da0c7205e714cd7429b267c
+vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so|f4d8675a46c5e52add8f8e90e35b29cd33ac582b
+vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_800h_skel.so|c240d45c3a5fc37b964c4adab06f4cb0bfda62f5
+vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so|b9f68e320d24e9c51871a2056e1f47239bd1cb40
+vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so|99752b14bc669589f598b2c555af96834147e41e
+vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|d2174a2a4a680e93ee4262b5e6d99fd3c398620c
+vendor/lib/rfsa/adsp/libscveT2T_skel.so|487f830aca26c85ef79c8b599b2f03668ab732b5
+vendor/lib/rfsa/adsp/libvpp_svc_skel.so|2da97f61c1d14f1f9a38aecd8ab89a1f6fa8d991
+
+# ADSP modules
 vendor/lib/rfsa/adsp/dirac_resource.dar
-vendor/lib/rfsa/adsp/libadsp_fd_skel.so
-vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so
-vendor/lib/rfsa/adsp/libadsp_hvx_skel.so
-vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib/rfsa/adsp/libdirac-capiv2.so
-vendor/lib/rfsa/adsp/libdspCV_skel.so
-vendor/lib/rfsa/adsp/libfastcvadsp.so
-vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
-vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so
-vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_800h_skel.so
-vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so
-vendor/lib/rfsa/adsp/nuance.scd
 
 # Alarm - from LA.UM.8.2.r1-05700-sdm660.0
 -product/app/PowerOffAlarm/PowerOffAlarm.apk|c214e1f7de878aeebe642857d6283bbeca0c7a3e
@@ -117,8 +122,6 @@ vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|e08969ef1897ec5958894323f7
 # Bluetooth (aptX)
 product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
-vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so|8305c614ebf13f84f15989631b8fdfdb9828d9be
-vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so|eb0e912d25b06f977d5a89345c72d142b7ffb8ae
 
 # Camera
 vendor/etc/scve/facereco/gModel.dat
@@ -1086,10 +1089,6 @@ vendor/lib/libmmcamera_lavender_s5kgm1_ofilm_i.so
 vendor/lib/libmmcamera_lavender_s5kgm1sp_ofilm_i_eeprom.so
 vendor/lib/libmmcamera_lavender_s5kgm1sp_sunny_ii_eeprom.so
 vendor/lib/libmmcamera_lavender_s5kgm1_sunny_ii.so
-
-# CDSP
-vendor/lib/libcdsprpc.so
-vendor/lib64/libcdsprpc.so
 
 # Charger - from LA.UM.8.2.r1-05100-sdm660.0
 vendor/bin/hvdcp_opti|7241f7e3391796a13f58dc1eed352aece89982fd
