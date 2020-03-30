@@ -1090,8 +1090,8 @@ vendor/lib/libmmcamera_lavender_s5kgm1sp_ofilm_i_eeprom.so
 vendor/lib/libmmcamera_lavender_s5kgm1sp_sunny_ii_eeprom.so
 vendor/lib/libmmcamera_lavender_s5kgm1_sunny_ii.so
 
-# Charger - from LA.UM.8.2.r1-05100-sdm660.0
-vendor/bin/hvdcp_opti|7241f7e3391796a13f58dc1eed352aece89982fd
+# Charger
+vendor/bin/hvdcp_opti
 
 # CNE - from LA.UM.8.2.r1-05700-sdm660.0
 -vendor/app/CneApp/CneApp.apk|f26523cd2fd11c596fc6b3abf2a2fc73c6443663
