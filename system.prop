@@ -61,7 +61,7 @@ persist.vendor.camera.HAL3.enabled=1
 persist.vendor.camera.awb.sync=2
 persist.vendor.camera.manufacturer=Xiaomi
 persist.vendor.camera.model=Redmi Note 7
-vendor.camera.aux.packagelist=org.codeaurora.snapcam
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.motorola.faceunlock
 
 # Misc
 persist.chg.max_volt_mv=9000
