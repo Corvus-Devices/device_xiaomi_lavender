@@ -683,9 +683,6 @@
     <string name="config_SmartChargingSupspendValue" translatable="false">1</string>
     <string name="config_SmartChargingResumeValue" translatable="false">0</string>
 
-    <!-- Conditionalize Ambient Display mods -->
-    <bool name="config_has_Soli">true</bool>
-
     <!-- The list of components which should be automatically disabled for a specific package. --> 
     <string-array name="config_globallyDisabledComponents" translatable="false"> 
         <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
