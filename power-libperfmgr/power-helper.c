@@ -44,9 +44,7 @@
 
 #include "power-helper.h"
 
-#ifndef TAP_TO_WAKE_NODE
 #define TAP_TO_WAKE_NODE "/proc/tpd_gesture"
-#endif
 
 static int sysfs_write(char *path, char *s)
 {
