@@ -9,6 +9,10 @@ $(call inherit-product, vendor/xiaomi/lavender/lavender-vendor.mk)
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 PLATFORM_SECURITY_PATCH_OVERRIDE := 2020-04-05
 
+# OEM Unlock reporting
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.oem_unlock_supported=0
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     device/xiaomi/lavender
