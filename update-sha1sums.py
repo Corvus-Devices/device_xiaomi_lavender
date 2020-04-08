@@ -22,54 +22,59 @@ import sys
 device = 'lavender'
 vendor = 'xiaomi'
 
-with open('proprietary-files.txt', 'r') as f:
-    lines = f.read().splitlines()
+lines = [ line for line in open('proprietary-files-qc.txt', 'r') ]
 vendorPath = '../../../vendor/' + vendor + '/' + device + '/proprietary'
 needSHA1 = False
 
 
 def cleanup():
-    for index, line in enumerate(lines):
-        # Skip empty or commented lines
-        if len(line) == 0 or line[0] == '#':
-            continue
+  for index, line in enumerate(lines):
+    # Remove '\n' character
+    line = line[:-1]
 
-        # Drop SHA1 hash, if existing
-        if '|' in line:
-            line = line.split('|')[0]
-            lines[index] = '%s' % (line)
+    # Skip empty or commented lines
+    if len(line) == 0 or line[0] == '#':
+      continue
 
+    # Drop SHA1 hash, if existing
+    if '|' in line:
+      line = line.split('|')[0]
+      lines[index] = '%s\n' % (line)
 
 def update():
-    for index, line in enumerate(lines):
-        # Skip empty lines
-        if len(line) == 0:
-            continue
+  for index, line in enumerate(lines):
+    # Remove '\n' character
+    line = line[:-1]
 
-        # Check if we need to set SHA1 hash for the next files
-        if line[0] == '#':
-            needSHA1 = (' - from' in line)
-            continue
+    # Skip empty lines
+    if len(line) == 0:
+      continue
 
-        if needSHA1:
-            # Remove existing SHA1 hash
-            line = line.split('|')[0]
-            filePath = line.split(':')[1] if len(
-                line.split(':')) == 2 else line
+    # Check if we need to set SHA1 hash for the next files
+    if line[0] == '#':
+      needSHA1 = (' - from' in line)
+      continue
 
-            if filePath[0] == '-':
-                file = open('%s/%s' % (vendorPath, filePath[1:]), 'rb').read()
-            else:
-                file = open('%s/%s' % (vendorPath, filePath), 'rb').read()
+    if needSHA1:
+      # Remove existing SHA1 hash
+      line = line.split('|')[0]
+      filePath = line.split(':')[1] if len(line.split(':')) == 2 else line
 
-            hash = sha1(file).hexdigest()
-            lines[index] = '%s|%s' % (line, hash)
+      if filePath[0] == '-':
+        file = open('%s/%s' % (vendorPath, filePath[1:]), 'rb').read()
+      else:
+        file = open('%s/%s' % (vendorPath, filePath), 'rb').read()
 
+      hash = sha1(file).hexdigest()
+      lines[index] = '%s|%s\n' % (line, hash)
 
 if len(sys.argv) == 2 and sys.argv[1] == '-c':
-    cleanup()
+  cleanup()
 else:
-    update()
+  update()
 
-with open('proprietary-files.txt', 'w') as file:
-    file.write('\n'.join(lines) + '\n')
+with open('proprietary-files-qc.txt', 'w') as file:
+  for line in lines:
+    file.write(line)
+
+  file.close()
