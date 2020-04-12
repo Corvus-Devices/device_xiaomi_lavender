@@ -6,6 +6,9 @@
 
 DEVICE_PATH := device/xiaomi/lavender
 
+# APEX
+DEXPREOPT_GENERATE_APEX_IMAGE := true
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sdm660
 TARGET_NO_BOOTLOADER := true
