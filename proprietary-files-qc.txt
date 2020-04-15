@@ -539,9 +539,6 @@ vendor/bin/time_daemon|a3efd58d57f23d0f8e7cfe8da0d7887b2f3e48e8
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
 vendor/lib64/libtime_genoff.so|216cbb72e22a0ca76d766dc0b84055c5b31e0a4c
 
-# Wi-Fi - from LA.UM.8.2.r1-06200-sdm660.0
-vendor/bin/cnss-daemon|3da25e53740bc6bf7464d463001eceb97bc67d9b
-
 # Wi-Fi Display - from LA.UM.8.2.r1-06300-sdm660.0
 -framework/WfdCommon.jar|3440607d29511e1a671e565a2acc4d262e38a9fb
 -priv-app/WfdService/WfdService.apk|9da05dab9097ef8b016e99fd646b50167309ee5b
