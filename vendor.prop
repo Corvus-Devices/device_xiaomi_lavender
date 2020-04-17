@@ -80,6 +80,7 @@ vendor.audio.feature.audiozoom.enable=false
 vendor.audio.feature.snd_mon.enable=true
 
 # Bluetooth & FM
+persist.vendor.service.bdroid.sibs=false
 ro.vendor.bluetooth.wipower=false
 vendor.fm.a2dp.conc.disabled=true
 vendor.hw.fm.init=0
