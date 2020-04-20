@@ -133,7 +133,8 @@ persist.vendor.camera.exif.make=Xiaomi
 # Codec2 switch
 debug.media.codec2=2
 
-# Display Grapicht
+# Display Graphics
+debug.sf.hw=1
 ro.opengles.version=196610
 ro.sf.lcd_density=403
 ro.vendor.display.cabl=0
@@ -155,20 +156,6 @@ qemu.hw.mainkeys=0
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.qti.sys.fw.bservice_enable=true
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
-
-# Radio
-persist.vendor.radio.apm_sim_not_pwdn=1
-persist.vendor.radio.sib16_support=1
-persist.vendor.radio.custom_ecc=1
-persist.vendor.radio.rat_on=combine
-persist.vendor.radio.procedure_bytes=SKIP
-persist.vendor.radio.flexmap_type=none
-persist.backup.ntpServer=0.pool.ntp.org
-persist.radio.multisim.config=dsds
-persist.sys.fflag.override.settings_network_and_internet_v2=true
-ro.telephony.use_old_mnc_mcc_format=true
-ro.telephony.iwlan_operation_mode=legacy
-vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 
 # Radio IMS
 persist.dbg.ims_volte_enable=1
