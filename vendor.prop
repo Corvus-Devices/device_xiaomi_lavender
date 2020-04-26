@@ -148,6 +148,9 @@ drm.service.enabled=true
 # GPS
 persist.vendor.overlay.izat.optin=rro
 
+# Keystore
+ro.hardware.keystore_desede=true
+
 # Media
 vendor.video.disable.ubwc=1
 

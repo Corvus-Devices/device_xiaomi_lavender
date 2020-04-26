@@ -78,9 +78,9 @@ vendor/lib64/libsysmon_cdsp_skel.so|40d3511922c744016c419983b18f97952c23fee5
 vendor/bin/hvdcp_opti|8473b304aa2300c425e090da6688c1c124305b97
 
 # CNE - from LA.UM.8.2.r1-06200-sdm660.0
--vendor/app/CneApp/CneApp.apk|f26523cd2fd11c596fc6b3abf2a2fc73c6443663
+-vendor/app/CneApp/CneApp.apk|f7d6ced6f372df62dd2be547602bdf713da804a5
 -vendor/app/IWlanService/IWlanService.apk|32cb03f65a3412c7e0390b445ce5f36bcedfb809
-vendor/bin/cnd|9a00a4b3186d79c0dcb11c0511a2df848f30d320
+vendor/bin/cnd|26b8d6bd6b0b82c92c3dec6b86e42fede86f62dd
 vendor/etc/init/cnd.rc|3a5183df3479500fb729493bc56c71166fc10bce
 vendor/lib64/libcne.so|4c83b8a57e5ade7ae1210eca3572e3ba404cd7b0
 vendor/lib64/libcneapiclient.so|7bb109c43e2f135032859187150e800f336dca5d
@@ -170,9 +170,6 @@ vendor/lib64/libdrmtime.so|620d9e41f915ffc04afc635f4d080eff56543c65
 vendor/lib64/libGPreqcancel.so|bfff7b7d51e917a16b9a15a27fb81e16d0359348
 vendor/lib64/libGPreqcancel_svc.so|d4216112bda75e1d3b06b679dcd8978da17dca93
 vendor/lib64/libhdcpsrm.so|b74141509e50b6d1f7cb7c62e43302d5989e1c34
-vendor/lib64/libkeymasterdeviceutils.so|b5d4819abb7dbd7908dfe7c6cfa5035e02b10383
-vendor/lib64/libkeymasterprovision.so|8301c24afdf3455ed1730c179b485bb3beaf8199
-vendor/lib64/libkeymasterutils.so|b4fd9216b4ee9c2ef91cca3d08ca030ff51fdad1
 vendor/lib64/liboemcrypto.so|fe077436a6c9a57cf95b336713aeefcf3d677a1d
 vendor/lib64/libqisl.so|c4e7f283f3d416b784f2ec0f7000d607e044809b
 vendor/lib64/libQSEEComAPI.so|3e68ab8dc83089e5ff64ed2c31da52326c3fd9fe
@@ -536,7 +533,7 @@ etc/wfdconfigsink.xml|5b4a96f251fd83c2eee520d06bea2b5b159fcd36
 lib/com.qualcomm.qti.wifidisplayhal@1.0.so|ae4ba4448820bae832db16c4d64bd547bff13503
 lib/libFileMux.so|1c713da8d18f03deb33c3211761fc07dd57d6946
 lib/libmmosal.so|5647df92a81245da459b30d311137068993d4787
-lib/libmmparser_lite.so|1d43c2cac10af253973d2747f4874a230cc44ca7
+lib/libmmparser_lite.so|100ac6adf23ef4b32ef83b7232a7418b94dbdac7
 lib/libmmrtpdecoder.so|c4d8d4ec093a24e2d158ffe1edb408aeb83e5edb
 lib/libmmrtpencoder.so|c1d969d3600a9b9a7505e4d1f18ab3ac0f111406
 lib/libOmxMux.so|a299e70ca30d2edc010602d3c0de00e612cfbbcf
@@ -557,7 +554,7 @@ lib/libwfduibcsrc.so|58d43f5593a7c0a6929c0ed3aef02386fbc0afc8
 lib/libwfduibcsrcinterface.so|4eba1e3a541bc433eb75cf74807591fd16618c74
 lib64/libmmosal.so|f2ec52d5ff321b7064dd6102a0ebc7914c11b7c9
 lib64/libwfdclient.so|90e3f8c60361c353919743a6e362c3115861fb53
-lib64/libwfdnative.so|f10fdc70715a88031fc1aa151dca18b4acc9ab92
+lib64/libwfdnative.so|b28b0d83b8d52ad3450735bdeea6498b1a7a18c2
 vendor/bin/wifidisplayhalservice|7b84c067e9caf4350a2436a912f5957f57b42c7b
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc|04e463342cbba4c0e9c311a18238f95dec9359fd
 vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so|5004085e4c19e7812f0c71881b12f3c5168b19e2
@@ -565,6 +562,6 @@ vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0.so|089b6b4b9217e0fdfc655491fecd6d
 vendor/lib/libmmosal_proprietary.so|ef5b82a40427a71a98ab3bc95b72299f8d971141
 vendor/lib/libwfdcommonutils_proprietary.so|af255ba4ce085c7502453b5bf7005f8ccfa78840
 vendor/lib/libwfdhaldsmanager.so|ad8747952cc5f85a68b4eab669897c82b086da05
-vendor/lib/libwfdhdcpcp.so|53cec4263ae5fe79a15783c86d336bb946bfc919
+vendor/lib/libwfdhdcpcp.so|1a3afba4bd6aa7d23c9c7b08669652a1b341841f
 vendor/lib/libwfdmmservice.so|d25a796600eb252d133c1370f3c62adc7e9a3d03
 vendor/lib/libwfdmodulehdcpsession.so|22b64660d1c0ca946960ecde14795e4de073ccff
