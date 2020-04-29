@@ -1223,7 +1223,12 @@ vendor/lib64/sensor_calibrate.so
 # Soter - lavender
 -app/SoterService/SoterService.apk
 
-# Thermal Configs
+# Thermal Configs - lavender 11.0.4.0
+vendor/bin/thermal-engine
+-vendor/lib/libthermalclient.so
+-vendor/lib64/libthermalclient.so
+vendor/lib64/libthermalfeature.so
+vendor/lib64/libthermalioctl.so
 vendor/etc/thermal-engine-camera.conf
 vendor/etc/thermal-engine-map.conf
 vendor/etc/thermal-engine-normal.conf
