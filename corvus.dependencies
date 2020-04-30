@@ -8,10 +8,5 @@
     "repository": "vendor_xiaomi_lavender",
     "target_path": "vendor/xiaomi/lavender",
     "branch": "10"
-  },
-  {
-    "repository": "Genkzsz11/packages_apps_CorvusParts",
-    "target_path": "packages/apps/CorvusParts",
-    "branch": "10",
   }
 ]
