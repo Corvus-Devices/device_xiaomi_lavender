@@ -16,10 +16,10 @@ $(call inherit-product, device/xiaomi/lavender/device.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
 # Inherit some common Corvus stuff.
-$(call inherit-product, vendor/du/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := du_lavender
+PRODUCT_NAME := aosp_lavender
 PRODUCT_DEVICE := lavender
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7
