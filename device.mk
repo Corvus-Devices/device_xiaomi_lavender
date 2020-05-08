@@ -473,4 +473,4 @@ PRODUCT_BOOT_JARS += \
 
 # Corvus Parts
 PRODUCT_PACKAGES += \
-    CorvusParts
+    XiaomiParts
