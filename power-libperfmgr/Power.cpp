@@ -33,13 +33,8 @@
 /* RPM runs at 19.2Mhz. Divide by 19200 for msec */
 #define RPM_CLK 19200
 
-#ifndef TAP_TO_WAKE_NODE
 #define TAP_TO_WAKE_NODE "/proc/nvt_wake_gesture"
-#endif
-
-#ifndef TAP_TO_WAKE_NODE2
 #define TAP_TO_WAKE_NODE2 "/proc/touchscreen/enable_dt2w"
-#endif
 
 extern struct stat_pair rpm_stat_map[];
 
