@@ -21,40 +21,13 @@
 
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
-
-#include <stdint.h>
-#pragma push_macro("PROPERTY_VALUE_MAX")
-
-#include <cutils/properties.h>
-#include <string.h>
-
-static inline const char* BtmGetDefaultName()
-{
-    char product_model[PROPERTY_VALUE_MAX];
-    property_get("ro.product.model", product_model, "");
-
-    if (strstr(product_model, "Redmi Note 7"))
-        return "Redmi Note 7";
-    if (strstr(product_model, "Redmi Note 7S"))
-        return "Redmi Note 7S";
-
-    // Fallback to ro.product.model
-    return "";
-}
-#undef PROPERTY_VALUE_MAX
-
-#define BTM_DEF_LOCAL_NAME BtmGetDefaultName()
-#define BLUETOOTH_QTI_SW TRUE
 // Disables read remote device feature
 #define MAX_ACL_CONNECTIONS   16
-#define MAX_L2CAP_CHANNELS    16
+#define MAX_L2CAP_CHANNELS    32
 #define BLE_VND_INCLUDED   TRUE
+#define GATT_MAX_PHY_CHANNEL  10
 // skips conn update at conn completion
 #define BT_CLEAN_TURN_ON_DISABLED 1
 
-/* Increasing SEPs to 12 from 6 to support SHO/MCast i.e. two streams per codec */
-#define AVDT_NUM_SEPS 12
-
-#pragma pop_macro("PROPERTY_VALUE_MAX")
-
+#define AVDT_NUM_SEPS 35
 #endif
