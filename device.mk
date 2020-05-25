@@ -455,3 +455,6 @@ PRODUCT_BOOT_JARS += \
 # Corvus Parts
 PRODUCT_PACKAGES += \
     CorvusParts
+
+# Vendor properties
+-include $(LOCAL_PATH)/vendor_prop.mk
