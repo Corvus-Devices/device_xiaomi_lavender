@@ -203,7 +203,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.procedure_bytes=SKIP \
     persist.backup.ntpServer=0.pool.ntp.org \
     persist.radio.multisim.config=dsds \
-    ro.telephony.use_old_mnc_mcc_format=true \
     ro.telephony.iwlan_operation_mode=legacy \
     ro.telephony.default_network=22,22 \
     ro.vendor.use_data_netmgrd=true \
