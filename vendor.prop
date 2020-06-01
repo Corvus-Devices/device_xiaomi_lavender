@@ -131,9 +131,6 @@ persist.vendor.imx376_ofilm.light.lux=275
 persist.vendor.bokeh.switch.lux=290
 persist.vendor.camera.exif.make=Xiaomi
 
-# Codec2 switch
-debug.media.codec2=2
-
 # Display Graphics
 debug.sf.hw=1
 ro.opengles.version=196610
