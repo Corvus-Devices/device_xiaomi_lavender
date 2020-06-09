@@ -452,9 +452,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
-# Corvus Parts
-PRODUCT_PACKAGES += \
-    CorvusParts
-
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
