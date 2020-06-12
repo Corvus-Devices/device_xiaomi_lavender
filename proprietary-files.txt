@@ -40,14 +40,6 @@ vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
-vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_General_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp
 
 # Bluetooth (aptX)
 product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
@@ -1052,15 +1044,15 @@ vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # Fingerprint firmware
-etc/firmware/goodixfp.b00:vendor/firmware/goodixfp.b00
-etc/firmware/goodixfp.b01:vendor/firmware/goodixfp.b01
-etc/firmware/goodixfp.b02:vendor/firmware/goodixfp.b02
-etc/firmware/goodixfp.b03:vendor/firmware/goodixfp.b03
-etc/firmware/goodixfp.b04:vendor/firmware/goodixfp.b04
-etc/firmware/goodixfp.b05:vendor/firmware/goodixfp.b05
-etc/firmware/goodixfp.b06:vendor/firmware/goodixfp.b06
-etc/firmware/goodixfp.b07:vendor/firmware/goodixfp.b07
-etc/firmware/goodixfp.mdt:vendor/firmware/goodixfp.mdt
+vendor/firmware/goodixfp.b00
+vendor/firmware/goodixfp.b01
+vendor/firmware/goodixfp.b02
+vendor/firmware/goodixfp.b03
+vendor/firmware/goodixfp.b04
+vendor/firmware/goodixfp.b05
+vendor/firmware/goodixfp.b06
+vendor/firmware/goodixfp.b07
+vendor/firmware/goodixfp.mdt
 vendor/firmware/fpctzappfingerprint.b00
 vendor/firmware/fpctzappfingerprint.b01
 vendor/firmware/fpctzappfingerprint.b02
@@ -1072,11 +1064,7 @@ vendor/firmware/fpctzappfingerprint.b07
 vendor/firmware/fpctzappfingerprint.mdt
 
 # Fingerprint sensor
--vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk
--vendor/app/QFingerprintService/QFingerprintService.apk
 vendor/bin/qfp-daemon
-vendor/etc/permissions/com.fingerprints.extension.xml
-vendor/framework/com.fingerprints.extension.jar
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.sdm660.so
 vendor/lib64/hw/fingerprint.fpc.default.so
@@ -1193,12 +1181,6 @@ vendor/lib64/libmlipay.so|c988ff04fcd90621cf46d219bdbc7eef341d1ce6
 vendor/lib64/libmlipay@1.1.so|7d07b19faa36c62babf39a41b2baf8de370d706c
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so|2c05d2902c757410aec30c6a5d0bf77b016583fa
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so|0c4bb0c8ba1cbf357bb0b5117e93db0382ffcf49
-
-# Qdutils
-vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
-vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
-vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
-vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
 # Sensor-configs
 vendor/etc/sensors/elliptic.conf
