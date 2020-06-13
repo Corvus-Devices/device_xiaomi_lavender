@@ -139,6 +139,17 @@ on post-fs-data
     chown system system /data/vendor_de/0/fpdata/user.db	
     rm /data/vendor/fpc/user.db
 
+service vendor.mlipay-1-1 /vendor/bin/mlipayd@1.1
+    class main
+    user system
+    group system
+
 # Workaround for camera HAL can not read sys property
 on property:sys.camera.face.unlock=*
     setprop vendor.camera.face.unlock ${sys.camera.face.unlock}
+
+on property:sys.thermallct.isincall=1
+    write /sys/class/power_supply/battery/device/thermalcall 1
+
+on property:sys.thermallct.isincall=0
+    write /sys/class/power_supply/battery/device/thermalcall 0
