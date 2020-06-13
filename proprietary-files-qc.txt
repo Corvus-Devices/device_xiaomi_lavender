@@ -371,8 +371,8 @@ vendor/lib64/libqmi_csi.so|7cff37f2c3eb31ed97f313b57f3710b2e881bed9
 vendor/lib64/libqmi_encdec.so|eedf39676bf4447cb2e3f629d1d18dcad846ab85
 vendor/lib64/libqmiservices.so|31f853a8d658db8c255acdedd28c2b59f28e9425
 
-# Radio - from LA.UM.8.2.r1-05100-sdm660.0
-product/framework/qti-telephony-common.jar|96154b2576114dd566bbc99a2d9af612de8849df
+# Radio - from LA.UM.8.2.r1-06700-sdm660.0
+product/framework/qti-telephony-common.jar|14e32b1cb0fdc9d7802414e95e41376499b51b11
 
 # Radio - from LA.UM.8.2.r1-06200-sdm660.0
 -product/app/datastatusnotification/datastatusnotification.apk|9d0bae96aa9f156534074b515c66126d13db5413
