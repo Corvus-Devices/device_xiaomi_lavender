@@ -1055,6 +1055,7 @@ vendor/etc/qdcm_calib_data_tianma_nt36672a_fhdplus_video_mode_dsi_panel.xml
 # DRM-Widevine
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
+vendor/lib/liboemcrypto.so
 vendor/lib64/libwvhidl.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/mediadrm/libwvdrmengine.so
