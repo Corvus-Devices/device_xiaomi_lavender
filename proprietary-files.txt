@@ -103,7 +103,7 @@ vendor/etc/camera/megviifacepp_model
 vendor/etc/camera/model_back.dlc
 vendor/etc/camera/model_front.dlc
 vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin
-vendor/lib/hw/camera.sdm660.so
+vendor/lib/hw/camera.sdm660.so|ef8fcde6c1c90bddc9c6bffc2c989763991c3715
 vendor/lib/libmmcamera_interface.so
 vendor/lib/libmmjpeg_interface.so
 vendor/lib/libqomx_core.so
