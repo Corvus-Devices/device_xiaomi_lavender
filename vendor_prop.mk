@@ -175,6 +175,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.vidc.enc.disable.pq=true \
     vendor.video.disable.ubwc=1
 
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+
 # Misc
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \

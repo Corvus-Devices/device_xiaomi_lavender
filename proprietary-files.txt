@@ -1210,6 +1210,10 @@ vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
 
+# Media for av 
+lib/libavenhancements.so
+lib64/libavenhancements.so
+
 # Mlipay - from wayne V11.0.3.0.PDCCNXM
 vendor/bin/mlipayd@1.1|4c30cfd1b32f99ff3043eadca8e7a4b7b9a00c79
 vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc|b5ab5bcd031fe4d9781b5911c0595eaeac8b80ea
