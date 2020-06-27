@@ -1067,9 +1067,9 @@ vendor/lib64/liboemcrypto.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 
 # FM
-lib/libfm-hci.so
+lib/libfm-hci.so|68379ed687d49e5d18e703a5281de8f8fc68505c
 lib/fm_helium.so
-lib64/libfm-hci.so
+lib64/libfm-hci.so|ef736f0bf55b91e5237878051a5b6f0477610f9d
 lib64/fm_helium.so
 vendor/bin/fm_qsoc_patches
 -lib/vendor.qti.hardware.fm@1.0.so
